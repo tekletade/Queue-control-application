@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".Issuer_Activity">
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textheader"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Your Ordered Services...">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/issuedlist"
+        android:layout_below="@+id/textheader"
+        android:layout_width="match_parent"
+        
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/laybtns"
+        android:visible="false"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        >
+
+        <Button
+            android:id="@+id/shiftbtn"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:text="ቀይር" />
+
+        <Button
+            android:id="@+id/leavebtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="አቋርጥ"
+            app:backgroundTint="@color/design_default_color_error" />
+
+    </LinearLayout>
+
+</RelativeLayout>
